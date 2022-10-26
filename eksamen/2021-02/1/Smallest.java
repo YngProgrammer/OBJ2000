@@ -4,31 +4,31 @@ public class Smallest
 {
     public static void main(String[] args)
     {
-        int x;
+        int x, result;
 
         x = 25;
-        assert smallestOddNumberBiggerThan(x) == 27;
+        result = smallestOddNumberBiggerThan(x);
+        System.out.println(result);
 
         x = 34;
-        assert smallestOddNumberBiggerThan(x) == 35;
+        result = smallestOddNumberBiggerThan(x);
+        System.out.println(result);
 
         x = -7;
-        assert smallestOddNumberBiggerThan(x) == -5;
+        result = smallestOddNumberBiggerThan(x);
+        System.out.println(result);
+
+        x = -8;
+        result = smallestOddNumberBiggerThan(x);
+        System.out.println(result);
     }
 
     public static int smallestOddNumberBiggerThan(int x)
     {
         if(x % 2 == 0)
         {
-            if (x > 0)
-            {
-                return x + 1;
-            }
-            else
-            {
-                return x - 1;
-            }
+            return x + 1;
         }
-        return x;
+        return x + 2;
     }
 }
