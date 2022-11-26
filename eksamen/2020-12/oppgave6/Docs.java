@@ -1,10 +1,24 @@
 package oppgave6;
 
+import java.time.LocalDate;
 public class Docs {
     private int archiveNumber;
     private String title;
     private String subtitle;
     private int year;
+
+    public Docs(int number, String title) {
+        this.archiveNumber = number;
+        this.title = title;
+        this.year = LocalDate.now().getYear();
+    }
+
+    public Docs(int number, String title, String subtitle) {
+        this.archiveNumber = number;
+        this.title = title;
+        this.subtitle = subtitle;
+        this.year = LocalDate.now().getYear();
+    }
 
     public int getArchiveNumber() {
         return this.archiveNumber;
