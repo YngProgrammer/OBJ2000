@@ -34,4 +34,14 @@ public class Professors extends Employees {
     public boolean isActive() {
         return this.active;
     }
+
+    @Override
+    public void print() {
+        super.print();
+
+        System.out.println("Employee number: " + getEmployeeNumber());
+
+        System.out.println("Course: " + course);
+        System.out.println("Active? " + active);
+    }
 }
