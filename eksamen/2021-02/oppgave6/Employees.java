@@ -54,4 +54,10 @@ public class Employees {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void print() {
+        System.out.println("First name: " + firstName);
+        System.out.println("Last name: " + lastName);
+        System.out.println("Age: " + age);
+    }
 }
