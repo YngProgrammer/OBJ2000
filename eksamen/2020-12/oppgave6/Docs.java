@@ -53,7 +53,6 @@ public class Docs {
     }
 
     public void print() {
-        System.out.println("--- Docs ---");
         System.out.println("Title\t|\t" + title);
         System.out.println("Subtitle\t|\t" + subtitle);
     }

@@ -32,4 +32,17 @@ public class Reports extends Docs {
     public boolean isConfidential() {
         return this.confidential;
     }
+
+    @Override
+    public void print() {
+        super.print();
+        
+        // Data fields that were not printed in the parent's print() method
+        System.out.println("Archive number\t|\t" + getArchiveNumber());
+        System.out.println("Year\t|\t" + getYear());
+
+        // Additional data fields that are specific to this subclass
+        System.out.println("FBI Department Number\t|\t" + department);
+        System.out.println("Confidential?\t|\t" + confidential);
+    }
 }
