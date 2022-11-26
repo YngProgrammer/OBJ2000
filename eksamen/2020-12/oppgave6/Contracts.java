@@ -19,4 +19,16 @@ public class Contracts extends Docs{
         super(number, title, subtitle);
         this.partner = partner;
     }
+
+    public void printContract() {
+        System.out.println("Archive number\t|\t" + getArchiveNumber());
+        System.out.println("Title\t|\t" + getTitle());
+        System.out.println("Year\t|\t" + getYear());
+    }
+
+    public void printFullContract() {
+        printContract();
+        System.out.println("Subtitle\t|\t" + getSubtitle());
+        System.out.println("Partner\t|\t" + partner);
+    }
 }
