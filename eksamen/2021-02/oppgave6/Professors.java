@@ -26,4 +26,12 @@ public class Professors extends Employees {
         this.course = course;
         this.active = active;
     }
+
+    public String getCourse() {
+        return this.course;
+    }
+
+    public boolean isActive() {
+        return this.active;
+    }
 }
