@@ -24,4 +24,12 @@ public class Reports extends Docs {
         this.department = department;
         this.confidential = confidential;
     }
+
+    public int getDepartment() {
+        return this.department;
+    }
+
+    public boolean isConfidential() {
+        return this.confidential;
+    }
 }
