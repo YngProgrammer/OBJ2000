@@ -51,4 +51,10 @@ public class Docs {
     public void setYear(int year) {
         this.year = year;
     }
+
+    public void print() {
+        System.out.println("--- Docs ---");
+        System.out.println("Title\t|\t" + title);
+        System.out.println("Subtitle\t|\t" + subtitle);
+    }
 }
