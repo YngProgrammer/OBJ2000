@@ -6,6 +6,23 @@ public class Employees {
     private String lastName;
     private int age;
 
+    public Employees(int number, String firstName, String lastName) {
+        this.employeeNumber = number;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Employees(
+        int number,
+        String firstName,
+        String lastName,
+        int age) {
+        this.employeeNumber = number;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
     public int getEmployeeNumber() {
         return this.employeeNumber;
     }
